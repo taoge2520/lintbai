@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>lintbai的个人站 - lintbai.com</title>
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/css/bootstrap-theme.min.css" rel="stylesheet">
+  <style>
+
+	body{
+	  font-family: 'microsoft yahei',Arial,sans-serif;
+	}
+
+	.cvheader{
+	  border-bottom: 1px solid #DFDFDF;
+	  padding-top:30px;
+	  padding-bottom:20px;
+	}
+
+	.cvheader h1{
+	  margin:0;
+	}
+
+	.address{
+	  background: #efb73e;
+	  color: #fff;
+	  padding: 10px 0;
+	}
+
+	/* 定义辅助CSS来美化简历主体 */
+
+	.cvbody{
+	  padding-top: 50px; 
+	}
+
+	.cbox{
+	  margin-bottom: 30px;
+	  color: #FFF;
+	  padding: 50px;
+	}
+
+	/* 定义cbox颜色 */
+	.green{
+	  background: #2ecc71;
+	}
+
+	.orange{
+	  background: orange;
+	}
+
+	.red{
+	  background: #dd4814;
+	}
+
+	.bbox{
+	  border: 1px solid #DFDFDF;
+	  border-radius: 5px;
+	  margin-bottom:30px;
+	  padding: 50px;
+	}
+
+	.footer{
+	  margin: 30px 0 30px;
+	  padding: 50px;
+	  background: #CCC;
+	  color: #FFF;
+	}
+</style>
+<script type="text/javascript" id="headerpagebeginjs-1488756265_23271">try {window.external.pagestate(window, "window.pagebegin");var jsPageBeginNode = document.getElementById("headerpagebeginjs-1488756265_23271");if (jsPageBeginNode){jsPageBeginNode.parentNode.removeChild(jsPageBeginNode);}} catch(e) {}</script>
+<script type="text/javascript" id="headerjs-1488756265_23271" sogou-script="true" src="https://BCC0E825-2420-4190-AF25-ABD45D41EA3A/se/extheadercontentscript/?sbid=headerjs-1488756265_23271&isTopFrame=false&url=http%3A%2F%2Fwww.gbtags.com%2Fgb%2Fdemoviewer%2F3568%2Fb8c4a67f-b20c-45f2-b9ba-c4cf060eb569%2Fbs.html.htm" charset="UTF-8"></script>
+<link rel="stylesheet" id="headercss-1488756265_23271" type="text/css" href="https://BCC0E825-2420-4190-AF25-ABD45D41EA3A/se/extcontentcss/?sbid=headercss-1488756265_23271&isTopFrame=false&url=http%3A%2F%2Fwww.gbtags.com%2Fgb%2Fdemoviewer%2F3568%2Fb8c4a67f-b20c-45f2-b9ba-c4cf060eb569%2Fbs.html.htm" charset="UTF-8"></link>
+<script type="text/javascript" id="headercssdeljs-1488756265_23271">var jsCSSNode = document.getElementById("headercss-1488756265_23271");if (jsCSSNode){jsCSSNode.parentNode.removeChild(jsCSSNode);}var jsSelfNode = document.getElementById("headercssdeljs-1488756265_23271");if (jsSelfNode){jsSelfNode.parentNode.removeChild(jsSelfNode);}</script>
+<script type="text/javascript" id="sbid-secureinput" sogou-script="true" src="https://BCC0E825-2420-4190-AF25-ABD45D41EA3A/se/secureinputjs/" charset="UTF-8"></script>
+</head>
+<body>
+  <!-- 定义简历的头部 //-->
+<div class="pull-right">
+	<ul class="nav nav-pills pull-right">
+		{{if .IsLogin}}
+		<li><a href="/tools">随手画</a></li>
+		<li><a href="/photo">照片墙</a></li>
+		{{end}}
+		{{if .IsLogin}}
+		<li><a href="/login?exit=true">退出登录</a></li>
+		{{else}}
+		<li title="登录使用tools"><a href="/login">私人登录</a></li>
+		{{end}}
+		
+	</ul>
+</div><br>
+<div class="container">
+  <div class="row cvheader">
+    <div class="col-lg-7 col-md-7 col-xs-12">
+      <!--  添加颜色//-->
+      <h1 class="text-primary">LinTao Bai</h1>
+      <!--  添加图标 //-->
+      <p><span class="glyphicon glyphicon-paperclip"></span> 底层开发 && go语言工程师</p>
+    </div>
+    
+    <div class="col-lg-3 col-md-3 col-xs-12">
+      <div class="row">
+        
+        <div class="col-lg-4 col-md-4 col-xs-4">
+          <p id="contact" class="address text-center">联系</p>
+        </div>
+        
+        <div class="col-lg-8 col-md-8 col-xs-8">
+          <p><span class="glyphicon glyphicon-envelope"></span> taogeblt@foxmail.com</p>
+          <p><span class="glyphicon glyphicon-earphone"></span> 18030120049 or you can call： 13065545982</p>
+          <p><span class="glyphicon glyphicon-road"></span> 福建省厦门市</p>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="col-lg-2 col-md-2 col-xs-12">
+      <p>
+        <!-- 这里定义图片为响应式，并且添加圆角效果，以便保证图片在不同设备上都可以完美显示 //-->
+        <img data-toggle="tooltip" data-placement="left" id="avatar" title="我是白林涛" class="img-responsive img-rounded" src="/static/img/0.jpg" alt="">
+       </p>
+    </div>
+  </div>
+</div>
+
+<!-- 定义简历的主体部分 //-->
+
+<div class="container">
+  <div class="row cvbody">
+    
+    <!-- 这里定义两个区域，布局定义如下：//-->
+    
+    <div class="col-lg-6 col-md-6 col-xs-12">
+    
+      <div class="row">
+        <div class="cbox green">
+          <h4>关于我</h4>
+          <p>       
+	 		我的名字是白林涛，英文名lint，gopher一枚，93年出生。
+          </p>
+        </div>
+        <div class="cbox red">
+          <h4>个人技能</h4>
+          <p>
+            <!-- 这里使用Bootstrap3的组件添加技能 //-->
+            
+            golang
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" style="width:80%"></div>
+            </div>
+            
+            linux
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary" style="width:50%"></div>
+            </div>
+            
+            数据库
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" style="width:70%"></div>
+            </div>
+            
+            HTML/CSS/Javascript
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning" style="width:30%"></div>
+            </div>
+          </p>
+        </div>
+        <div class="cbox orange">
+          <h4>个人证书</h4>
+          <!-- <p>
+			<canvas id="en" width="150" height="150" class="pull-left"></canvas>
+			<canvas id="zh" width="150" height="150" class="pull-right"></canvas>
+			<p class="clearfix"></p>
+          </p> -->
+          <p>软件著作权:</p>
+          <p>基于双目视觉的目定位系统1.0（登记号：2014SR205987）</p>
+          <P>智能机器人足球系统V1.3（登记号：2013SR141160）</P>
+          <p>基于激光测绘的焊接机器人辅助系统V2.0（登记号：2016SR368083）</p>
+          <p>机器人激光测绘系统1.0（登记号：2014SR160445）</p>
+        </div>
+      </div>
+    
+    </div>
+    
+    <!-- 为了清楚的分割两个区域，这里我们添加了一个空白区域，或者也可以在CSS中定义Margin实现//-->
+    <div class="col-lg-1 col-md-1 col-xs-12"></div>
+    
+    <div class="col-lg-5 col-md-5 col-xs-12">
+    
+      <div class="row">
+        <div class="bbox">
+          <h4>教育背景</h4>
+          <p>2012-2016年，就读于集美大学计算机工程学院，专业为计算机科学与技术专业</p>
+        </div>
+        <div class="bbox">
+          <h4>工作状况</h4>
+          <p>就职于厦门帝恩思科技股份有限公司，职位c/go语言工程师</p>
+        </div>
+        <div class="bbox">
+          <h4>个人爱好</h4>
+          <p>
+
+            <span class="glyphicon glyphicon-tree-deciduous"></span> 跑步
+            <span class="glyphicon glyphicon-plane"></span> 旅游
+            <p><span class="glyphicon glyphicon-cutlery"></span> 美食</p>
+            <p><span class="glyphicon glyphicon-music"></span> 音乐</p>
+          </p>
+        </div>
+      </div>
+    
+    </div>
+    
+    
+  </div>
+</div>
+
+<!-- 定义简历页底 //-->
+<div class="container">
+  <div class="row"><div class="footer text-center">关注-我</div></div>
+</div>
+
+<!-- 引入jQuery类库和Bootstrap3的Javascript类库 //-->
+<script type='text/javascript' src="http://libs.baidu.com/jquery/1.11.1/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script>
+/*Javascript源代码*/
+
+$(function(){
+  $('#contact').popover({placement:'bottom', container: 'body', html:true, content:'<p>QQ: 247816224</p><p>微信：bailintao2520</p>'});
+
+  $('#avatar').tooltip({'placement':'bottom'});
+  
+	$.getScript('http://www.chartjs.org/assets/Chart.js',function(){
+	  
+	  var zhdata = [{
+			label: '中文水平',
+			value: 90,
+			highlight: "#FFC870",
+			color: "#F7464A"
+		}, {
+			value: 10,
+			color: "#EEEEEE"
+		}
+		]
+
+		var zhoptions = {
+			animation: true,
+			segmentShowStroke : false
+		};
+
+		var c = $('#zh');
+		var ct = c.get(0).getContext('2d');
+		
+		var zhChart = new Chart(ct).Doughnut(zhdata, zhoptions);
+
+	
+	  var endata = [{
+			label: '英文水平',
+			value: 80,
+			highlight: "#5AD3D1",
+			color: "#4D5360"
+		}, {
+        value: 20,
+        color: "#EEEEEE"
+		}
+		]
+
+		var enoptions = {
+			animation: true,
+			segmentShowStroke : false
+		};
+
+		var c = $('#en');
+		var ct = c.get(0).getContext('2d');
+		
+		var enchart = new Chart(ct).Doughnut(endata, enoptions);
+	});
+
+});
+
+</script>
+</body>
+</html><script type="text/javascript" id="tailjs-1488756265_23271" sogou-script="true" src="https://BCC0E825-2420-4190-AF25-ABD45D41EA3A/se/exttailcontentscript/?sbid=tailjs-1488756265_23271&isTopFrame=false&url=http%3A%2F%2Fwww.gbtags.com%2Fgb%2Fdemoviewer%2F3568%2Fb8c4a67f-b20c-45f2-b9ba-c4cf060eb569%2Fbs.html.htm" charset="UTF-8"></script>
+<script type="text/javascript" id="tailpageendjs-1488756265_23271">try {window.external.pagestate(window, "window.pageend");var jsPageEndNode = document.getElementById("tailpageendjs-1488756265_23271");if (jsPageEndNode){jsPageEndNode.parentNode.removeChild(jsPageEndNode);}} catch(e) {}</script>
